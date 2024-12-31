@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+
+<head>
+  <title>MStore-Game</title>
+  <link rel="stylesheet" href="./css/styls.css">
+  <script src="./js/script.js"></script>
+  <script src="./vue3/vue v3.4.27.js"></script>
+  <script src="./json/games"></script>
+</head>
+
+<body>
+  <div class="nav-container">
+      <div class="left-aligned">
+        <div class="nav-icon">
+          <img src="./images/icon/Navigation icon.png" class="img-thumbnail" alt="Navigation icon">
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Market</button>
+          <div class="dropdown-content">
+            <a href="#">classify1</a>
+            <a href="#">classify2</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">MStore</button>
+          <div class="dropdown-content">
+            <a href="#">classify1</a>
+            <a href="#">classify2</a>
+          </div>
+        </div>
+        <button class="dropbtn">Mystery Boxes</button>
+        <button class="dropbtn">BLog</button>
+      </div>
+      <div class="right-aligned">
+        <div class="Search-input">
+          <input type="Search" placeholder="Search" class="Search-container">
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn1">Create</button>
+          <div class="dropdown-content">
+            <a href="#">classify1</a>
+            <a href="#">classify2</a>
+          </div>
+        </div>
+        <div class="dropdown" id="dropbtn3">
+          <button class="dropbtn1">BSC</button>
+          <div class="dropdown-content">
+            <a href="#">classify1</a>
+            <a href="#">classify2</a>
+          </div>
+        </div>
+        <div class="nav-right-aligned-btn">
+        <button class="dropbtn1">Connect</button>
+        </div>
+      </div>
+  </div>
+  <div class="main">
+    <div class="Subheading">
+      <p class="sub-text">INITIAL GAME OFFERING</p>
+      <h1 class="MT-text">GAMESON</h1>
+      <p class="Descriptive">THE FIRST AND LARGEST TRADING PLATFORM</p>
+    </div>
+    <div class="main-countdown">
+      <div class="image-box1">
+        <div class="text-overlay">
+          <h1>Initial</h1>
+          <p>Description blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+        </div>
+        <div class="countdown1">
+          Start sale in<br><span id="countdown1">06 19 24 00</span>
+        </div>
+      </div>
+        <!-- <div class="image-box2">
+          <div class="text-overlay">
+            <h1>Initial</h1>
+            <p>Description blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+          </div>
+          <div class="countdown1">
+            Start sale in<br><span id="countdown2">03 19 24 00</span>
+          </div>
+        </div> -->
+      </div>
+    <div class="game-container">
+      <div class="game-container1">
+        <div class="game">
+          <a href="#"><img src="./images/icon/ETH.png" alt="ETH"></a>
+        </div>
+        <div class="game-info1">
+          <h1>Game Name</h1>
+          <p>Our NFT collection is the first series of a new collectible crypto NFT series. Elfin Kingdom is an exciting
+            new MMORPG Game. Players can choose their role inside the game, explore maps, do daily quests, mine NFTs,
+            collect NFTs, connect with other players and create community, battle and share.</p>
+            <div class="collect-likes">  
+              <div id="app-f">
+                <button @click="count++" class="get-it-now">Get it now</button>
+              </div>
+              <div class="heart-count">
+                <img src="./images/icon/Vector.png" alt="heart" >
+                {{count}}
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="game-container2">
+        <div class="game-info1">
+          <h1>Game Name</h1>
+          <p>Our NFT collection is the first series of a new collectible crypto NFT series. Elfin Kingdom is an exciting
+            new MMORPG Game. Players can choose their role inside the game, explore maps, do daily quests, mine NFTs,
+            collect NFTs, connect with other players and create community, battle and share.</p>
+            <div class="collect-likes">  
+              <div id="app-s">
+                <button @click="count++" class="get-it-now">Get it now</button>
+              </div>
+              <div class="heart-count">
+                <img src="./images/icon/Vector.png" alt="heart" >
+                {{count}}
+              </div>
+            </div>
+        </div>
+        <div class="game">
+          <a href="#"><img src="./images/icon/ETH.png" alt="ETH"></a>
+        </div>
+      </div>
+    </div>
+    <div class="games">
+      <div class="games-container">
+        <div class="gemes-first">
+          <a href="#"><img src="./images/icon/ETH.png" alt="ETH"></a>
+        </div>
+        <h2>Game Name</h2>
+        <p>Our NFT collection is the first series of a newcollectible crypto NFT series.Elfin Kingdom isan exciting new MMORPG Game.</p>
+      </div>
+      <div class="games-container">
+        <img src="./images/list/list2.png" alt="game2">
+        <h2>Game Name</h2>
+        <p>Our NFT collection is the first series of a newcollectible crypto NFT series.Elfin Kingdom isan exciting new MMORPG Game.</p>
+      </div><div class="games-container">
+        <img src="./images/list/list3.png" alt="game3">
+        <h2>Game Name</h2>
+        <p>Our NFT collection is the first series of a newcollectible crypto NFT series.Elfin Kingdom isan exciting new MMORPG Game.</p>
+      </div>
+      <div class="games-container">
+        <img src="./images/list/list4.png" alt="game4">
+        <h2>Game Name</h2>
+        <p>Our NFT collection is the first series of a newcollectible crypto NFT series.Elfin Kingdom isan exciting new MMORPG Game.</p>
+      </div>
+      <div class="games-container">
+        <img src="./images/list/list5.png" alt="game5">
+        <h2>Game Name</h2>
+        <p>Our NFT collection is the first series of a newcollectible crypto NFT series.Elfin Kingdom isan exciting new MMORPG Game.</p>
+      </div>
+      <div class="games-container">
+        <img src="./images/list/list6.png" alt="game6">
+        <h2>Game Name</h2>
+        <p>Our NFT collection is the first series of a newcollectible crypto NFT series.Elfin Kingdom isan exciting new MMORPG Game.</p>
+      </div>
+      <div class="games-container">
+        <img src="./images/list/list7.png" alt="game7">
+        <h2>Game Name</h2>
+        <p>Our NFT collection is the first series of a newcollectible crypto NFT series.Elfin Kingdom isan exciting new MMORPG Game.</p>
+      </div>
+      <div class="games-container">
+        <img src="./images/list/list8.png" alt="game8">
+        <h2>Game Name</h2>
+        <p>Our NFT collection is the first series of a newcollectible crypto NFT series.Elfin Kingdom isan exciting new MMORPG Game.</p>
+      </div>
+      <div class="games-container">
+        <img src="./images/list/list9.png" alt="game9">
+        <h2>Game Name</h2>
+        <p>Our NFT collection is the first series of a newcollectible crypto NFT series.Elfin Kingdom isan exciting new MMORPG Game.</p>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="footer">
+    <div class="Footer-Menu">
+      <div class="Marketplace">
+        <h3>Marketplace</h3>
+        <ul>
+          <li><a href="" target="blank">All NFT</a></li>
+          <li><a href="" target="blank">Art</a></li>
+          <li><a href="" target="blank">Music</a></li>
+          <li><a href="" target="blank">Games</a></li>
+          <li><a href="" target="blank">Metaverse</a></li>
+          <li><a href="" target="blank">collectibles</a></li>
+          <li><a href="" target="blank">Photography</a></li>
+          <li><a href="" target="blank">Sports</a></li>
+          <li><a href="" target="blank">Meme</a></li>
+        </ul>
+      </div>
+      <div class="Resources">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="" target="blank">FAQ</a></li>
+          <li><a href="" target="blank">Get Featured</a></li>
+          <li><a href="" target="blank">Get Verified</a></li>
+          <li><a href="" target="blank">Ambassador</a></li>
+          <li><a href="" target="blank">Blog</a></li>
+          <li><a href="" target="blank">Help Center</a></li>
+        </ul>
+      </div>
+      <div class="About">
+        <h3>About</h3>
+        <ul>
+          <li><a href="" target="blank">About</a></li>
+          <li><a href="" target="blank">Media Kit</a></li>
+        </ul>
+      </div>
+      <div class="Social-Media">
+        <h3>Social Media</h3>
+        <a href="" target="blank">
+          <img src="./images/footer/discord-c1.png" alt="discord-c1">
+        </a>
+        <a href="" target="blank">
+          <img src="./images/footer/medium-c2.png" alt="medium-c2">
+        </a>
+        <a href="" target="blank">
+          <img src="./images/footer/instagram-c3.png" alt="instagram-c3">
+        </a>
+        <a href="" target="blank">
+          <img src="./images/footer/twitter-c4.png" alt="twitter-c4.png">
+        </a>
+        <a href="" target="blank">
+          <img src="./images/footer/YouTuBe-c5.png" alt="YouTuBe-c5.png">
+        </a>
+        <a href="" target="blank">
+          <img src="./images/footer/Telegram-c6.png" alt="Telegram-c6.png">
+        </a>
+
+      </div>
+    </div>
+    <div class="Copyright">
+      <div class="company">
+        <h3>©2021 MINTVERSE, InC</h3>
+      </div>
+      <div class="Legal">
+        <h3>Privacy Policy</h3>
+        <h3>Terms of Service</h3>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
